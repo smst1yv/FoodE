@@ -1,0 +1,887 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root {
+    --light: #FFFFFF;
+    --primary: #E21A43;
+    --muted: #888888;
+    --secondary-muted: #F7F7F7;
+    --secondary: rgba(226, 26, 67, 0.1);
+    --night: #000;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 1);
+
+}
+
+.header {
+    width: 100%;
+    height: 110px;
+    background-color: var(--light);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.header .logo img {
+    width: 170px;
+    height: 20px;
+}
+
+.menu .menu-ul {
+    display: flex;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.menu .menu-ul li a {
+    color: var(--muted);
+}
+
+.menu .menu-ul li:hover a {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.menu .menu-ul li {
+    margin-right: 35px;
+}
+
+.button img {
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+}
+
+.button {
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary);
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.search input:focus {
+    outline: 0;
+}
+
+.search {
+    display: flex;
+    width: 250px;
+}
+
+.search input {
+    background-color: var(--secondary);
+    border: none;
+    padding: 15px;
+    color: var(--muted);
+    height: 50px;
+    font-size: 16px;
+    flex: 1;
+}
+
+.login,
+.shop {
+    width: 50px;
+    height: 50px;
+    background-color: var(--secondary);
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.login img {
+    width: 15px;
+    height: 20px;
+}
+
+.shop img {
+    width: 20px;
+    height: 20px;
+}
+
+.action {
+    display: flex;
+}
+
+.slider-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 60px;
+    position: relative;
+    height: 600px;
+}
+
+.slider {
+    display: flex;
+}
+
+.slider .slider-h {
+    flex: 1;
+    padding: 20px;
+}
+
+.slider-img {
+    flex: 1;
+}
+
+.slider-h h2 {
+    font-size: 64px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.slider-h p {
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 25px;
+}
+
+.slider-button .buynow {
+    background-color: var(--primary);
+    color: var(--light);
+    padding: 14px 29px;
+    border: 1px solid var(--primary);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.slider-button .seenow {
+    padding: 14px 26px;
+    color: var(--primary);
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid var(--primary);
+    background-color: var(--light);
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.slider-img img {
+    width: 450px;
+    height: 350px;
+}
+
+.slider-button {
+    padding-top: 25px;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fruit {
+    width: 970px;
+    height: 130px;
+    background-color: var(--light);
+    box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.05);
+    margin-top: -70px;
+    padding: 26px 28px;
+    border-radius: 10px;
+    display: flex;
+    position: absolute;
+}
+
+.fruit-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.fruit-item {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+}
+
+.fruit-item img {
+    width: 53px;
+    height: 52px;
+}
+
+.fruit-item h3 {
+    font-size: 18px;
+    text-align: center;
+}
+
+.background {
+    height: 800px;
+    background: rgba(247, 247, 247, 1);
+    width: 100%;
+}
+
+.background-section {
+    display: flex;
+    padding-top: 100px;
+    flex-wrap: wrap;
+}
+
+.products {
+    padding-left: 700px;
+    padding-top: 120px;
+}
+
+.products h3 {
+    font-size: 24px;
+    position: absolute;
+}
+
+.food img {
+    width: 246px;
+    height: 290px;
+    object-fit: contain;
+    background-color: rgba(247, 247, 247, 1);
+    position: relative;
+    top: 15px;
+    left: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.food {
+    display: flex;
+    background-color: rgba(255, 255, 255, 1);
+    flex-direction: column;
+    width: 270px;
+    height: 410px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-left: 35px;
+}
+
+.food-about h2 {
+    font-size: 18px;
+    color: rgba(102, 102, 102, 1);
+    padding-top: 35px;
+    text-align: center;
+}
+
+.food .food-button {
+    text-align: center;
+    margin-left: 65px;
+    padding-top: 10px;
+    width: 130px;
+    height: 50px;
+}
+
+.food .food-button button {
+    padding: 12px 25px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0s ease-in-out;
+    background-color: var(--secondary);
+    border: none;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.food:hover .food-button button {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    margin-top: -25px;
+}
+
+.food:hover img {
+    width: 346px;
+    height: 390px;
+    transition: all 0.3s ease-in-out;
+}
+
+.food:hover {
+    width: 370px;
+    height: 520px;
+    transition: all 0.3s ease-in-out;
+}
+
+.food .price {
+    font-weight: 600;
+    text-align: center;
+    padding-top: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.food:hover .price {
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+.free-delivery {
+    position: absolute;
+    display: flex;
+    flex: 1;
+    width: 100%;
+    overflow: hidden;
+}
+
+.free-container img {
+    position: relative;
+    top: 100px;
+    bottom: 0;
+    width: 196px;
+    height: 196px;
+    border-radius: 15px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.delivery-icon {
+    background-color: var(--secondary);
+    border-radius: 15px;
+    height: 135px;
+    width: 135px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    text-align: center;
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+
+.delivery-icon img {
+    width: 48px;
+    height: 41px;
+    margin-top: 15px;
+}
+
+.about-h {
+    flex: 1;
+    width: 100%;
+}
+
+.delivery-about {
+    flex: 1;
+    display: flex;
+    height: 400px;
+}
+
+.eat {
+    position: relative;
+    left: 70px;
+    top: -30px;
+}
+
+.eat-two {
+    position: relative;
+    top: -30px;
+    left: -50px;
+}
+
+.eat-tree {
+    position: relative;
+    left: -352px;
+    top: 75px;
+}
+
+.about-h h2 {
+    font-weight: 600;
+    font-size: 60px;
+    color: var(--muted);
+    position: relative;
+    top: 42px;
+    right: 200px;
+}
+
+.delivery-price span:nth-child(1) {
+    color: var(--muted);
+    position: relative;
+    font-weight: 600;
+    font-size: 25px;
+    top: 33px;
+    right: 200px;
+}
+
+.delivery-price span:nth-child(2) {
+    color: var(--night);
+    position: relative;
+    font-weight: 600;
+    font-size: 25px;
+    top: 33px;
+    right: 170px;
+}
+
+.delivery-button button {
+    padding: 14px 26px;
+    color: var(--primary);
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid var(--primary);
+    background-color: var(--light);
+    position: relative;
+    top: 38px;
+    right: 200px;
+    cursor: pointer;
+}
+
+.selling-product {
+    position: relative;
+    top: 500px;
+    height: 1200px;
+}
+
+.product-head {
+    text-align: center;
+}
+
+.product-menu {
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 15px;
+}
+
+.product-menu ul {
+    display: flex;
+}
+
+.product-menu ul li {
+    margin-left: 20px;
+}
+
+.product-menu ul li a {
+    color: var(--muted);
+}
+
+.product-menu ul li a:hover {
+    color: var(--primary);
+    border-bottom: 1px solid var(--primary);
+}
+
+.product-food img {
+    width: 246px;
+    height: 290px;
+    object-fit: contain;
+    background-color: rgba(247, 247, 247, 1);
+    position: relative;
+    top: 15px;
+    left: 10px;
+}
+
+
+.product-food {
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    width: 270px;
+    height: 450px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-left: 35px;
+    position: relative;
+    top: 125px;
+}
+
+.best-product {
+    background: rgba(247, 247, 247, 1);
+    margin-top: -55px;
+    height: 700px;
+    display: flex;
+}
+
+.img-icon {
+    position: relative;
+    left: 50px;
+    top: 15px;
+}
+
+.img-icon img {
+    width: 166px;
+    height: 40px;
+    background-color: var(--light);
+}
+
+.find-container {
+    position: relative;
+    width: 100%;
+    height: 468px;
+    display: flex;
+}
+
+.find-container .find-img {
+    display: flex;
+    flex: 1;
+
+}
+
+.find-container .find-img img {
+    position: relative;
+    width: 470px;
+    height: 328px;
+    left: 100px;
+    top: 50px;
+    left: 75px;
+}
+
+.find-about {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+}
+
+.find-about h2 {
+    color: rgba(51, 51, 51, 1);
+    font-size: 54px;
+    margin-top: 30px;
+}
+
+.find-about p {
+    width: 530px;
+}
+
+.find-about .checked-icon {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.find-about .checked-icon img {
+    width: 193px;
+    height: 23px;
+    object-fit: contain;
+}
+
+.find-about .checked-icon img:nth-child(1) {
+    margin-left: 5px;
+}
+
+.find-about p {
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
+.category-container {
+    position: absolute;
+    background-color: rgba(247, 247, 247, 1);
+    width: 100%;
+    display: flex;
+    height: 900px;
+}
+
+.food-about-price {
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    width: 270px;
+    height: 570px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-left: 35px;
+    position: relative;
+    top: 50px;
+}
+
+.food-about-price img {
+    width: 246px;
+    height: 290px;
+    object-fit: contain;
+    background-color: rgba(247, 247, 247, 1);
+    position: relative;
+    top: 15px;
+    left: 10px;
+}
+
+.food-about-price h2 {
+    font-size: 18px;
+    color: rgba(102, 102, 102, 1);
+    padding-top: 35px;
+    text-align: center;
+}
+
+.food-about-price .date img {
+    position: relative;
+    top: 25px;
+    height: 50px;
+}
+
+.food-about-price p {
+    width: 250px;
+    margin-left: 15px;
+}
+
+.food-about-price .before {
+    color: var(--muted);
+    font-size: 20px;
+    font-weight: 400;
+    width: 86px;
+}
+
+.food-about-price .after {
+    color: var(--primary);
+    font-size: 22px;
+    font-weight: 600;
+    width: 86px;
+    margin-left: 35px;
+}
+
+.price-b-a {
+    margin-left: 13px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.food-about-price .bag {
+    width: 173px;
+    background-color: var(--primary);
+    padding: 15px 43px;
+    color: var(--light);
+    margin-left: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.food-about-price .add {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(226, 26, 67, 0.2);
+    border: none;
+}
+
+.category-container .product-menu {
+    margin-left: 280px;
+}
+
+.category-container .head {
+    margin-left: 370px;
+    margin-top: 50px;
+}
+
+.foods-about-price {
+    width: 270px;
+    height: 139px;
+    background-color: var(--light);
+    position: relative;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.foods-about-price .oil-img {
+    width: 111px;
+    height: 119px;
+    background-color: var(--muted);
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.foods-about-price h2 {
+    font-size: 14px;
+    margin-top: -110px;
+    margin-left: 135px;
+    margin-bottom: 5px;
+}
+
+.foods-about-price .before {
+    margin-left: 135px;
+}
+
+.buy-button {
+    width: 100px;
+    height: 40px;
+    background-color: #FFFFFF;
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid var(--primary);
+    margin-left: 135px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.foods-about-price img {
+    width: 67px;
+    height: 8px;
+    margin-left: 135px;
+}
+
+.price-bar {
+    background-color: rgba(247, 247, 247, 1);
+    top: 100px;
+    left: 350px;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.follow-container {
+    height: 300px;
+    position: relative;
+    top: 900px;
+    display: flex;
+}
+
+.download {
+    flex: 1;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-screen {
+    height: 600px;
+    flex: 1;
+}
+
+.download h2 {
+    font-size: 48px;
+    font-weight: 600;
+    position: relative;
+    top: 150px;
+    left: 40px;
+    color: rgba(51, 51, 51, 1);
+}
+
+.download p {
+    font-weight: 400;
+    font-size: 16px;
+    width: 540px;
+    position: relative;
+    top: 180px;
+    left: 40px;
+}
+.download img{
+    position: relative;
+    width: 378px;
+    height: 52px;
+    top: 220px;
+    left: 40px;
+    cursor: pointer;
+}
+.app-screen img{
+    width: 632px;
+    height: 504px;
+    position: relative;
+    top: 20px;
+}
+.footer{
+    position: absolute;
+    top: 4600px;
+}
+.about-info-logo img{
+    width: 170px;
+    height: 20px;
+}
+
+.about-info-logo{
+    width: 270px;
+    height: 193px;
+    margin-left: 50px;
+}
+
+.about-info-logo p{
+    margin: 20px 0;
+    color: #666666;
+    font-weight: normal;
+}
+
+.about-text i{
+    color: #666666;
+    margin-right: 3px;
+}
+
+.about-text .active-icon{
+    color: #E21A43;
+}
+
+.about-info{
+    width: 270px;
+}
+.about-info ul li a{
+    color: var(--muted);
+}
+
+.about-info ul li a:hover{
+    color: var(--primary);
+}
+.footer-about{
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+    align-items: center;
+}
+
+
+.footer-about ul {
+    color: #666666;
+    margin-top: 30px;
+}
+
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pays{
+    display: flex;
+}
+
+.pays .pay-logo{
+    margin-right: 15px;
+    border: none;
+    width: 35px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.pays .pay-logo img{
+    width: 100%;
+}
+
+
+.right-button button:hover{
+    background-color: #E21A43;
+    color: #ffffff;
+}
+
+.left-buttons :nth-child(1):hover{
+    background-color: #FFFFFF;
+    color:#E21A43;
+}
+.container-footer{
+    margin-left: 50px;
+}
+.hr{
+    width: 70px;
+     margin-top: 20px;
+}
+.about-info h3{
+    color: rgba(51, 51, 51, 1);
+}
