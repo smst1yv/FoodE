@@ -243,6 +243,8 @@ header {
     display: flex;
     padding-top: 100px;
     flex-wrap: wrap;
+    max-width: 1220px;
+    margin: 0 auto;
 }
 
 .products {
@@ -303,25 +305,11 @@ header {
     font-weight: 600;
 }
 
-.food:hover .food-button button {
-    visibility: visible;
-    opacity: 1;
-    transition: all 0.3s ease-in-out;
-    position: absolute;
-    margin-top: -25px;
-}
 
-.food:hover img {
-    width: 346px;
-    height: 390px;
-    transition: all 0.3s ease-in-out;
-}
 
-.food:hover {
-    width: 370px;
-    height: 520px;
-    transition: all 0.3s ease-in-out;
-}
+
+
+
 
 .food .price {
     font-weight: 600;
@@ -331,18 +319,17 @@ header {
     visibility: visible;
 }
 
-.food:hover .price {
-    visibility: hidden;
-    opacity: 0;
-}
+
 
 
 .free-delivery {
-    position: absolute;
     display: flex;
     flex: 1;
     width: 100%;
     overflow: hidden;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-left: 50px;
 }
 
 .free-container img {
@@ -444,8 +431,8 @@ header {
 
 .selling-product {
     position: relative;
-    top: 500px;
-    height: 1200px;
+    top: 0px;
+    background-color: #F7F7F7;
 }
 
 .product-head {
@@ -508,6 +495,8 @@ header {
     margin-top: -55px;
     height: 700px;
     display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .img-icon {
@@ -532,7 +521,6 @@ header {
 .find-container .find-img {
     display: flex;
     flex: 1;
-
 }
 
 .find-container .find-img img {
@@ -542,6 +530,7 @@ header {
     left: 100px;
     top: 50px;
     left: 75px;
+    margin-left: 356px;
 }
 
 .find-about {
@@ -555,6 +544,7 @@ header {
     color: rgba(51, 51, 51, 1);
     font-size: 54px;
     margin-top: 30px;
+    width: 760px;
 }
 
 .find-about p {
@@ -583,11 +573,13 @@ header {
 }
 
 .category-container {
-    position: absolute;
+    position: relative;
     background-color: rgba(247, 247, 247, 1);
     width: 100%;
     display: flex;
     height: 900px;
+    margin: 0 auto;
+    max-width: 1532px;
 }
 
 .food-about-price {
@@ -737,7 +729,6 @@ header {
 .follow-container {
     height: 300px;
     position: relative;
-    top: 900px;
     display: flex;
 }
 
@@ -746,6 +737,7 @@ header {
     height: 600px;
     display: flex;
     flex-direction: column;
+    margin-left: 297px;
 }
 
 .app-screen {
@@ -760,6 +752,7 @@ header {
     top: 150px;
     left: 40px;
     color: rgba(51, 51, 51, 1);
+    width: 619px;
 }
 
 .download p {
@@ -785,8 +778,8 @@ header {
     top: 20px;
 }
 .footer{
-    position: absolute;
-    top: 4600px;
+    position: relative;
+    top: 400px;
 }
 .about-info-logo img{
     width: 170px;
@@ -829,6 +822,8 @@ header {
     justify-content: space-between;
     padding: 80px 0;
     align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 
@@ -884,4 +879,23 @@ header {
 }
 .about-info h3{
     color: rgba(51, 51, 51, 1);
+}
+
+.category-head-container{
+    background-color: rgba(247, 247, 247, 1);
+}
+
+@media(max-width:1705px){
+    .download{
+        margin-left: 221px;
+    }
+
+    .find-about h2{
+        width: 667px;
+    }
+
+    .find-container .find-img img{
+        margin-left: 170px;
+    }
+    
 }
